@@ -1,0 +1,69 @@
+@import "../utilities/variables";
+
+/* mobile */
+@media (max-width: 512px) {
+  .contact {
+    display: none;
+  }
+
+  .btn-pay button {
+    display: none;
+  }
+
+  video {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (min-width: 513px) and (max-width: 1023px) {
+  .section-0 {
+    text-align: center;
+    margin: 0px auto;
+    width: 70%;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .btn-pay button {
+    display: none;
+  }
+
+  video {
+    width: 50%;
+  }
+
+  .home-3 {
+    display: none;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .section-0 {
+    text-align: center;
+    margin: 0px auto;
+    width: 50%;
+  }
+
+  .section-1 {
+    display: flex;
+    flex-flow: row;
+  }
+
+  video {
+    width: 40%;
+  }
+
+  article {
+    border: 0.1rem solid #000;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+
+  .contact-mob {
+    display: none;
+  }
+}

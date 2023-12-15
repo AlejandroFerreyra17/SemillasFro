@@ -1,0 +1,77 @@
+#mainCar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  button {
+    background-color: #9bbe83;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  &hover {
+    background-color: #9bbe83;
+  }
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  button {
+    background-color: #9bbe83;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  &hover {
+    background-color: #9bbe83;
+  }
+}

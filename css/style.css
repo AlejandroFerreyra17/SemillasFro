@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.animation-1 {
+  background: linear-gradient(to right, #00495f 40%, #687664 50%, #3b695f 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradiant-p 5s linear infinite;
+}
+@keyframes gradiant-p {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.animation-2 {
+  animation: appear 3s;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* colors */
+/* typography */
+.button-1 {
+  position: relative;
+  padding: 10px 50px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  color: #292929;
+  overflow: hidden;
+  background-color: #9bbe83;
+  text-transform: uppercase;
+  transition: 1s all ease-in-out;
+}
+.button-1::before {
+  width: 400px;
+  height: 400px;
+  top: -370px;
+  left: -120px;
+  border-radius: 45%;
+  position: absolute;
+  content: "";
+  background-color: #ececec;
+  transition: 2s all ease-in-out;
+  animation: wave 10s infinite linear;
+}
+.button-1::after {
+  width: 400px;
+  height: 400px;
+  top: -360px;
+  left: -125px;
+  border-radius: 45%;
+  position: absolute;
+  content: "";
+  background-color: rgba(236, 236, 236, 0.5019607843);
+  transition: 2s all ease-in-out;
+  animation: wave 9s infinite linear;
+}
+.button-1 span {
+  position: relative;
+  z-index: 1;
+}
+.button-1:hover {
+  color: #fff;
+}
+.button-1:hover::before {
+  top: -450px;
+}
+.button-1:hover::after {
+  top: -440px;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button-2 {
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-size: 1em;
+  color: #000;
+  background-color: transparent;
+  outline: 2px solid #000;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.button-2:hover {
+  color: #fff;
+  outline: 2px solid #6b8e4e;
+}
+.button-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #6b8e4e;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.button-2:hover::after {
+  transform: scale(1, 1);
+}
+
+._m::after {
+  transform-origin: left;
+}
+
+.btn-color {
+  color: #2d593d;
+}
+
+.butn {
+  width: 100px;
+  height: 25px;
+  border: none;
+  font-size: 1em;
+  color: #000;
+  background-color: transparent;
+  outline: 2px solid #000;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.butn:hover {
+  color: #fff;
+  outline: 2px solid #6b8e4e;
+}
+
+.butn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #6b8e4e;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.butn:hover::after {
+  transform: scale(1, 1);
+}
+
+/* colors */
+/* typography */
+article img {
+  min-width: 10rem;
+  width: 70%;
+}
+article h3 {
+  font-family: "Amatic SC", cursive;
+}
+article p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+article button {
+  background: #c4d8c0;
+}
+article button a {
+  font-family: "Amatic SC", cursive;
+}
+
+/* colors */
+/* typography */
+footer {
+  background: #c4d8c0;
+}
+
+/* colors */
+/* typography */
+header {
+  background: #c4d8c0;
+}
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-family: "Amatic SC", cursive;
+  padding-bottom: 0.5rem;
+}
+header nav div a {
+  font-family: "Amatic SC", cursive;
+}
+
+.main-logo {
+  width: 3.5rem;
+}
+
+/* colors */
+/* typography */
+/* mobile */
+@media (max-width: 512px) {
+  .contact {
+    display: none;
+  }
+  .btn-pay button {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+}
+/* tablet */
+@media (min-width: 513px) and (max-width: 1023px) {
+  .section-0 {
+    text-align: center;
+    margin: 0px auto;
+    width: 70%;
+  }
+  .contact {
+    display: none;
+  }
+  .btn-pay button {
+    display: none;
+  }
+  video {
+    width: 50%;
+  }
+  .home-3 {
+    display: none;
+  }
+}
+/* desktop */
+@media (min-width: 1024px) {
+  .section-0 {
+    text-align: center;
+    margin: 0px auto;
+    width: 50%;
+  }
+  .section-1 {
+    display: flex;
+    flex-flow: row;
+  }
+  video {
+    width: 40%;
+  }
+  article {
+    border: 0.1rem solid #000;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+  .contact-mob {
+    display: none;
+  }
+}
+/* colors */
+/* typography */
+/* colors */
+/* typography */
+/* colors */
+/* typography */
+.div-color {
+  background: #c4d8c0;
+}
+
+.sch ul {
+  list-style: none;
+}
+
+/* colors */
+/* typography */
+.h2-catalogue {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #34724b;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-family: "Amatic SC", cursive;
+}
+
+.title-prod {
+  color: #ff4e50;
+}
+
+.select-option {
+  width: 50%;
+  background-color: #9fbf9b;
+}
+
+/* colors */
+/* typography */
+/* colors */
+/* typography */
+body {
+  background: #9bbe83;
+}
+
+.paragraph-home-1 {
+  text-indent: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-family: "Amatic SC", cursive;
+}
+.paragraph-home-1 a {
+  text-decoration: none;
+}
+
+.section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-info h2 {
+  font-size: 1.5rem;
+}
+.home-info p {
+  text-indent: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-family: "Amatic SC", cursive;
+}
+
+.mobile-contact {
+  font-size: 1.2rem;
+}
+
+/* colors */
+/* typography */
+.title-log {
+  font-family: "Amatic SC", cursive;
+}
+
+.bg-color {
+  background: #c4d8c0;
+}
+
+/* colors */
+/* typography */
+.terms {
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */
